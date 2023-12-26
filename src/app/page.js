@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Nav from "@/components/Nav";
 import SwiperMenu from "@/components/SwiperMenu";
 
@@ -15,11 +16,18 @@ function Home() {
 			<div className="relative w-full mt-16">
 				<div className="absolute flex w-full h-full z-10 place-content-center items-center">
 					<div className="flex flex-col items-center">
-						<p className="text-2xl border-4 py-4 px-12 md:text-7xl md:py-12 md:px-72 md:border-8">Coco Trade Indonesia</p>
+						<p className="text-2xl border-4 py-4 px-12 font-semibold md:text-7xl md:py-12 md:px-56 md:border-8">Coco Trade Indonesia</p>
 						<p className="text-center text-base mt-2 md:text-3xl md:mt-4">World&apos;s Best Coconut Briquette Charcoal From Indonesia</p>
 					</div>
 				</div>
 				<SwiperMenu />
+			</div>
+			<div>
+
+			</div>
+
+			<div className="fixed z-20 bottom-0 right-0 p-8">
+				<Contact />
 			</div>
 		</main>
 	)
