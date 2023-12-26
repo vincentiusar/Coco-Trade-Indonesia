@@ -17,7 +17,7 @@ function SwiperMenu() {
             fadeEffect={{crossFade: true}}
             speed={8000}
             autoplay={{
-                delay: 6000,
+                delay: 3000,
                 disableOnInteraction: false,
             }}
             loop={true}
