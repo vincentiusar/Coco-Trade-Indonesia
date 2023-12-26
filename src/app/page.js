@@ -12,6 +12,15 @@ function Home() {
 			<div className="w-full top-0 z-20 fixed">
 				<Nav />
 			</div>
+			<div className='relative w-full mt-16'>
+				<div className="absolute flex w-full h-full z-10 place-content-center items-center">
+					<div className="flex flex-col items-center">
+						<p className="text-7xl py-12 px-72 border-8">Coco Trade Indonesia</p>
+						<p className="text-3xl mt-4">World's Best Coconut Briquette Charcoal From Indonesia</p>
+					</div>
+				</div>
+				<SwiperMenu />
+			</div>
 		</main>
 	)
 }
