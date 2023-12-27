@@ -59,7 +59,7 @@ function Modal({ id }) {
                             <span className="sr-only">Close modal</span>
                         </Link>
                     </div>
-                    <div className="flex items-center p-5 place-content-between">
+                    <div className="flex flex-col md:flex-row items-center p-5 place-content-between">
                         <img src={products?.[id]?.image} className="w-1/2" />
                         <div class="relative overflow-x-auto shadow-md w-full">
                             <p className="text-center mb-4 text-xl font-normal">{products?.[id]?.subtitle}</p>
