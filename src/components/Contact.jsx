@@ -27,7 +27,7 @@ function Contact() {
 
     return (
         <div>
-            <div className="hidden md:block relative" onMouseEnter={hoverContact} onMouseLeave={hoverContact}>
+            <div className="block relative" onMouseEnter={hoverContact} onMouseLeave={hoverContact} onTouchStart={hoverContact}>
                 <div ref={rotating} className="absolute bg-violet-500 p-3 bottom-6 right-0 rounded-full transition-all z-20" >
                     <div className="cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-chat-dots" viewBox="0 0 16 16">
@@ -48,9 +48,6 @@ function Contact() {
                         <path fill="#c5221f" d="M52 51v8l20 15V48l-5.6-4.2c-5.94-4.45-14.4-.22-14.4 7.2"/>
                     </svg>
                 </div>
-            </div>
-            <div className="block md:hidden">
-                aaa
             </div>
         </div>
     )
