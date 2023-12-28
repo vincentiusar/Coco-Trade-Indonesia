@@ -61,7 +61,7 @@ function Products() {
 
 			<section className="my-12"></section>
 
-			<div>
+			<div className="w-full">
 				<Table data={products} />
 			</div>
 
