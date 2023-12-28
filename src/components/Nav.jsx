@@ -11,13 +11,13 @@ function Nav() {
                 </NavbarBrand>
                 <NavbarToggle />
                 <NavbarCollapse className='px-0 md:px-24'>
-                    <NavbarLink className='text-white cursor-pointer focus:bg-gray-500' href='#'>
+                    <NavbarLink className='text-white cursor-pointer' href='#'>
                         Home
                     </NavbarLink>
-                    <NavbarLink className='text-white cursor-pointer focus:bg-gray-500' href='#product'>
+                    <NavbarLink className='text-white cursor-pointer' href='#product'>
                         Product
                     </NavbarLink>
-                    <NavbarLink className='text-white cursor-pointer focus:bg-gray-500' href='#contact'>
+                    <NavbarLink className='text-white cursor-pointer' href='#contact'>
                         Contact Us
                     </NavbarLink>
                 </NavbarCollapse>
