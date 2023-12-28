@@ -1,9 +1,9 @@
 import Cards from "@/components/Card";
 import Contact from "@/components/Contact";
+import MobileCard from "@/components/MobileCard";
 import Modal from "@/components/Modal";
 import Nav from "@/components/Nav";
 import SwiperMenu from "@/components/SwiperMenu";
-import XCard from "@/components/XCard";
 import Link from "next/link";
 
 export const metadata = {
@@ -99,7 +99,7 @@ function Home({ searchParams }) {
 
 			<section className="my-20" id='product'></section>
 
-			<div className="flex flex-col items-center w-11/12 md:w-8/12 h-60v">
+			<div className="flex flex-col items-center w-11/12 md:w-8/12 h-full md:h-60v">
 				<p className="text-4xl font-semibold">Our Products</p>
 				{/* >= tablet */}
 				<div className="hidden md:flex mt-2 md:mt-12 items-stretch gap-14 place-content-between h-full">
@@ -108,14 +108,14 @@ function Home({ searchParams }) {
 					<Cards id={2} img={'hex.png'} title={"Hexagon Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
 				</div>
 				{/* mobile */}
-				<div className="md:hidden flex flex-col mt-2 items-center gap-3 place-content-between">
-					<XCard id={0} img={'cube.png'} title={"Cube Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
-					<XCard id={1} img={'pillow.png'} title={"Pillow Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
-					<XCard id={2} img={'hex.png'} title={"Hexagon Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+				<div className="md:hidden mt-2 flex flex-col items-center gap-16">
+					<MobileCard id={0} img={'cube.png'} title={"Cube Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+					<MobileCard id={1} img={'pillow.png'} title={"Pillow Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+					<MobileCard id={2} img={'hex.png'} title={"Hexagon Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
 				</div>
-				<button className="mt-12 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 border border-gray-600 text-gray-400 hover:text-white hover:bg-gray-800 focus:ring-gray-900">
+				<Link href='/products' className="mt-12 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 border border-gray-600 text-gray-400 hover:text-white hover:bg-gray-800 focus:ring-gray-900">
 					More Details
-				</button>
+				</Link>
 			</div>
 
 			<section className="my-10 md:my-20" id='contact'></section>
