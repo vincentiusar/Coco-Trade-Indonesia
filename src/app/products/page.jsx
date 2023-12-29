@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import Table from "@/components/Table";
@@ -59,15 +60,21 @@ function Products() {
 				<Nav />
 			</div>
 
-			<section className="my-12"></section>
-
-			<div className="w-full">
+			<div className="w-full mt-16 relative">
+				<img src="/bg_1.png" className="fixed top-0 -mt-16 md:mt-0 md:absolute object-cover w-full opacity-50 h-screen md:h-90v" />
+				<section className="my-12"></section>
 				<Table data={products} />
 			</div>
 
-			<section className="my-10 md:my-20" id='contact'></section>
+			<section className="my-10 md:my-28" id='contact'></section>
 
-			<Footer />
+			<div className="bg-black z-20 flex flex-col items-center">
+				<Footer />
+			</div>
+
+			<div className="fixed z-20 bottom-0 right-0 p-8">
+				<Contact />
+			</div>
 		</main>
 	)
 }
