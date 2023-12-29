@@ -55,7 +55,7 @@ const products = {
 
 function Products() {
 	return (
-		<main className="flex min-h-screen flex-col items-center bg-black">
+		<main className="flex min-h-screen flex-col items-center bg-black" id="product">
 			<div className="w-full top-0 z-20 fixed">
 				<Nav />
 			</div>
