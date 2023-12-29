@@ -21,7 +21,7 @@ function Home({ searchParams }) {
 			<div className="relative w-full mt-16 flex flex-col items-center">
 				<div className="absolute flex w-5/6 h-full z-10 place-content-center items-center">
 					<div className="flex flex-col items-center w-full text-center">
-						<p className="text-2xl border-4 py-4 font-semibold md:text-7xl md:py-12 md:border-8 w-full">Coco Trade Indonesia</p>
+						<p className="text-2xl border-4 py-4 font-semibold md:text-7xl md:py-8 md:border-8 w-9/12">Coco Trade Indonesia</p>
 						<p className="text-center text-base mt-2 md:text-3xl md:mt-4">World&apos;s Best Coconut Briquette Charcoal From Indonesia</p>
 					</div>
 				</div>
@@ -44,52 +44,52 @@ function Home({ searchParams }) {
 			<section className="my-12"></section>
 
 			{/* >= tablet */}
-			<div className="hidden md:flex items-center place-content-around px-12 md:px-40 w-full">
+			<div className="hidden lg:flex items-center place-content-around lg:px-40 w-full">
 				<div className="flex flex-col items-center w-1/5">
 					<img src='/eco.png' className="p-2 h-28 w-28 object-cover" />
-					<p>Eco-Friendly Products</p>
+					<p className="text-center">Eco-Friendly Products</p>
 					<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
 				<div className="flex flex-col items-center w-1/5">
 					<img src='/prolong.png' className="p-3 h-28 w-28 object-cover" />
-					<p>Prolong Charcoal</p>
+					<p className="text-center">Prolong Charcoal</p>
 					<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
 				<div className="flex flex-col items-center w-1/5">
 					<img src='/deliver.png' className="h-28 w-28 object-cover" />
-					<p>Fast Delivery</p>
+					<p className="text-center">Fast Delivery</p>
 					<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
 				<div className="flex flex-col items-center w-1/5">
 					<img src='/logo.png' className="h-28 w-28 p-3 object-cover" />
-					<p>Good Packaging</p>
+					<p className="text-center">Good Packaging</p>
 					<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
 			</div>
 			{/* Mobile */}
-			<div className="md:hidden flex flex-col gap-2 px-12 w-full">
-				<div className="flex gap-1 items-center h-fit w-full">
+			<div className="lg:hidden flex flex-col items-center gap-2 px-12 w-full">
+				<div className="flex gap-1 items-center h-fit">
 					<img src='/eco.png' className="p-2 h-28 w-28 object-cover" />
 					<div>
 						<p className="text-center">Eco-Friendly Products</p>
 						<p className="font-thin text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
-				<div className="flex gap-1 items-center h-fit w-full">
+				<div className="flex gap-1 items-center h-fit">
 					<div>
 						<p className="text-center">Prolong Charcoal</p>
 						<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 					<img src='/prolong.png' className="p-3 h-28 w-28 object-cover" />
 				</div>
-				<div className="flex gap-1 items-center h-fit w-full">
+				<div className="flex gap-1 items-center h-fit">
 					<img src='/deliver.png' className="h-28 w-28 object-cover" />
 					<div>
 						<p className="text-center">Fast Delivery</p>
 						<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
-				<div className="flex gap-1 items-center h-fit w-full">
+				<div className="flex gap-1 items-center h-fit">
 					<div>
 						<p className="text-center">Good Packaging</p>
 						<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -100,16 +100,16 @@ function Home({ searchParams }) {
 
 			<section className="my-20" id='product'></section>
 
-			<div className="flex flex-col items-center w-11/12 md:w-8/12 h-full md:h-60v">
+			<div className="flex flex-col items-center w-11/12 lg:w-8/12 h-full lg:h-60v">
 				<p className="text-4xl font-semibold">Our Products</p>
 				{/* >= tablet */}
-				<div className="hidden md:flex mt-2 md:mt-12 items-stretch gap-14 place-content-between h-full">
+				<div className="hidden lg:flex mt-2 md:mt-12 items-stretch gap-14 place-content-between h-full">
 					<Cards id={0} img={'cube.png'} title={"Cube Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
 					<Cards id={1} img={'pillow.png'} title={"Pillow Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
 					<Cards id={2} img={'hex.png'} title={"Hexagon Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
 				</div>
 				{/* mobile */}
-				<div className="md:hidden mt-2 flex flex-col items-center gap-16">
+				<div className="lg:hidden md:w-9/12 mt-2 flex flex-col items-center gap-16">
 					<MobileCard id={0} img={'cube.png'} title={"Cube Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
 					<MobileCard id={1} img={'pillow.png'} title={"Pillow Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
 					<MobileCard id={2} img={'hex.png'} title={"Hexagon Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />

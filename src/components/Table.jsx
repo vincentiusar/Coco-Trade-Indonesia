@@ -3,8 +3,9 @@ function Table({ data }) {
         <>
             {/* >= Tablet */}
             <div className="hidden md:flex w-full overflow-x-auto flex-col items-center">
-                <div className="overflow-hidden w-10/12">
-                    <table className="w-full table-fixed">
+                <div className="relative overflow-hidden w-10/12">
+                    <div className="absolute w-full h-full bg-black top-0 z-0 opacity-50"></div>
+                    <table className="w-full table-fixed z-10 relative">
                         <thead className="p-4 text-sm font-medium gap-x-16 bg-gray-800 border-gray-700 text-white">
                             <tr className="text-start">
                                 {
@@ -22,16 +23,16 @@ function Table({ data }) {
                                     <td>
                                         <img src={item?.image} className="w-full h-20v object-contain"></img>
                                     </td>
-                                    <td className="px-4 py-5 text-sm text-gray-400">{item?.title}</td>
-                                    <td className="px-4 py-5 text-sm text-gray-400">{item?.subtitle}</td>
-                                    <td className="px-4 py-5 text-sm text-gray-400">
+                                    <td className="px-4 py-5 text-sm text-gray-300">{item?.title}</td>
+                                    <td className="px-4 py-5 text-sm text-gray-300">{item?.subtitle}</td>
+                                    <td className="px-4 py-5 text-sm text-gray-300">
                                         <ul className="list-disc">
                                             {item?.quality.map((item, key) => (
                                                 <li key={key}>{item?.name} - {item?.ash}</li>
-                                                ))}
+                                            ))}
                                         </ul>
                                     </td>
-                                    <td className="px-4 py-5 text-sm text-gray-400">{item?.desc}</td>
+                                    <td className="px-4 py-5 text-sm text-gray-300">{item?.desc}</td>
                                 </tr>
                             ))}
                         </tbody>
@@ -41,7 +42,7 @@ function Table({ data }) {
             {/* Mobile */}
             <div className="flex md:hidden flex-col gap-16 w-full items-center">
                 {data?.data?.map((item, key) => (
-                    <div key={key} className="flex flex-col shadow-xl rounded-lg w-11/12 shadow-gray-500 md:flex-row items-center p-5 place-content-between">
+                    <div key={key} className="flex flex-col shadow-xl rounded-lg bg-black z-10 w-11/12 shadow-gray-500 items-center p-5 place-content-between">
                         <img src={item?.image} className="w-1/2" />
                         <div class="relative overflow-x-auto shadow-md w-full">
                             <p className="text-center mb-4 text-xl font-normal">{item?.title} - {item?.subtitle}</p>

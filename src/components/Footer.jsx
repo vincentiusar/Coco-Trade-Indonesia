@@ -3,7 +3,7 @@ import Link from "next/link";
 function Footer() {
     return (
         <>
-            <div className="grid grid-cols-1 gap-10 w-10/12 md:gap-0 items-center md:grid-cols-2 md:px-12 md:w-2/3 h-full">
+            <div className="grid grid-cols-1 gap-10 w-10/12 md:gap-0 items-center md:grid-cols-2 md:px-12 md:w-2/3 h-full z-20">
 				<div className="col-span-1">
 					<img src='/logo_full.png' alt='logo' className="w-1/3 scale-125" />
 					<p className="font-thin">
@@ -14,11 +14,11 @@ function Footer() {
 
 					<div>
 						<Link target="_blank" href='https://wa.me/6281386278150' className="text-normal">
-							Whatsapp: <span className="hover:underline hover:text-blue-700">+62 8138 6278 150</span>
+							Whatsapp: <span className="hover:text-blue-700">+62 8138 6278 150</span>
 						</Link>
 					</div>
 					<div>
-						<Link target="_blank" href='https://mail.google.com/mail/u/0/?fs=1&to=cocotraderindo@gmail.com&tf=cm' className="text-normal hover:underline hover:text-blue-700">
+						<Link target="_blank" href='https://mail.google.com/mail/u/0/?fs=1&to=cocotraderindo@gmail.com&tf=cm' className="text-normal hover:text-blue-700">
 							cocotraderindo@gmail.com
 						</Link>
 					</div>
