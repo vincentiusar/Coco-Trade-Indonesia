@@ -56,9 +56,7 @@ const products = {
 function Products() {
 	return (
 		<main className="flex min-h-screen flex-col items-center bg-black" id="product">
-			<div className="w-full top-0 z-20 fixed">
-				<Nav />
-			</div>
+			<Nav />
 
 			<div className="w-full mt-16 relative">
 				<img src="/bg_1.png" className="fixed top-0 -mt-16 md:mt-0 md:absolute object-cover w-full opacity-50 h-screen md:h-90v" />
