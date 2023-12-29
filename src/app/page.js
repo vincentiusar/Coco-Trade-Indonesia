@@ -21,8 +21,8 @@ function Home({ searchParams }) {
 			<div className="relative w-full mt-16 flex flex-col items-center">
 				<div className="absolute flex w-5/6 h-full z-10 place-content-center items-center">
 					<div className="flex flex-col items-center w-full text-center">
-						<p className="text-2xl border-4 py-4 font-semibold md:text-7xl md:py-8 md:border-8 w-9/12">Coco Trade Indonesia</p>
-						<p className="text-center text-base mt-2 md:text-3xl md:mt-4">World&apos;s Best Coconut Briquette Charcoal From Indonesia</p>
+						<p className="text-xl border-4 py-4 font-bold md:font-semibold md:text-7xl md:py-8 md:border-8 w-10/12 lg:w-9/12"><span className="text-2xl lg:text-7xl">Coco</span> Trade Indonesia</p>
+						<p className="text-center text-cus font-normal mt-2 md:text-3xl md:mt-4">World&apos;s Best Coconut Briquette Charcoal From Indonesia</p>
 					</div>
 				</div>
 				<SwiperMenu />
@@ -33,7 +33,7 @@ function Home({ searchParams }) {
 			<div className="flex flex-col items-center px-12 md:px-40">
 				<p className="text-xl md:text-4xl font-semibold">Our Charcoal Briquette</p>
 				<section className="py-2"></section>
-				<p className="text-center font-thin">
+				<p className="text-center font-extralight md:font-thin">
 					Discover the excellence of our Coconut Charcoal Briquette, meticulously crafted from top-tier local coconut shells and wood. 
 					Free from harmful additives, our briquettes, made by compressing finely ground coconut shell charcoal with a natural binder, offer heightened heat and prolonged burn time. 
 					Perfect for both indoor and outdoor use in households, and versatile for applications like barbecues, stoves, and metallurgy. 
@@ -44,7 +44,7 @@ function Home({ searchParams }) {
 			<section className="my-12"></section>
 
 			{/* >= tablet */}
-			<div className="hidden lg:flex items-center place-content-around lg:px-40 w-full">
+			<div className="hidden lg:flex items-center place-content-around px-40 w-full">
 				<div className="flex flex-col items-center w-1/5">
 					<img src='/eco.png' className="p-2 h-28 w-28 object-cover" />
 					<p className="text-center">Eco-Friendly Products</p>
@@ -72,13 +72,13 @@ function Home({ searchParams }) {
 					<img src='/eco.png' className="p-2 h-28 w-28 object-cover" />
 					<div>
 						<p className="text-center">Eco-Friendly Products</p>
-						<p className="font-thin text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p className="font-extralight md:font-thin text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
 				<div className="flex gap-1 items-center h-fit">
 					<div>
 						<p className="text-center">Prolong Charcoal</p>
-						<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p className="font-extralight md:font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 					<img src='/prolong.png' className="p-3 h-28 w-28 object-cover" />
 				</div>
@@ -86,13 +86,13 @@ function Home({ searchParams }) {
 					<img src='/deliver.png' className="h-28 w-28 object-cover" />
 					<div>
 						<p className="text-center">Fast Delivery</p>
-						<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p className="font-extralight md:font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 				</div>
 				<div className="flex gap-1 items-center h-fit">
 					<div>
 						<p className="text-center">Good Packaging</p>
-						<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p className="font-extralight md:font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div>
 					<img src='/logo.png' className="h-28 w-28 p-3 object-cover" />
 				</div>
