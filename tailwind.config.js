@@ -23,6 +23,9 @@ module.exports = {
         '30v': '30vh',
         '20v': '20vh',
         '10v': '10vh',
+      },
+      screens: {
+        'lg': '1200px'
       }
     },
   },
