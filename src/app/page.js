@@ -15,9 +15,7 @@ export const metadata = {
 function Home({ searchParams }) {
 	return (
 		<main className="flex min-h-screen flex-col items-center bg-black">
-			<div className="w-full top-0 z-20 fixed">
-				<Nav />
-			</div>
+			<Nav />
 			<div className="relative w-full mt-16 flex flex-col items-center">
 				<div className="absolute flex w-5/6 h-full z-10 place-content-center items-center">
 					<div className="flex flex-col items-center w-full text-center">
