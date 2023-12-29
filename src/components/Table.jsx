@@ -4,7 +4,7 @@ function Table({ data }) {
             {/* >= Tablet */}
             <div className="hidden md:flex w-full overflow-x-auto flex-col items-center">
                 <div className="relative overflow-hidden w-10/12">
-                    <div className="absolute w-full h-full bg-black top-0 z-0 opacity-50"></div>
+                    <div className="absolute w-full h-full bg-black top-0 z-0 opacity-70"></div>
                     <table className="w-full table-fixed z-10 relative">
                         <thead className="p-4 text-sm font-medium gap-x-16 bg-gray-800 border-gray-700 text-white">
                             <tr className="text-start">
