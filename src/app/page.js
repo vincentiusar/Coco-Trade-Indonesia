@@ -1,113 +1,135 @@
-import Image from 'next/image'
+import Cards from "@/components/Card";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import MobileCard from "@/components/MobileCard";
+import Modal from "@/components/Modal";
+import Nav from "@/components/Nav";
+import SwiperMenu from "@/components/SwiperMenu";
+import Link from "next/link";
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+export const metadata = {
+	title: 'Coco Trade Indonesia',
+	description: 'Generated by create next app',
 }
+
+function Home({ searchParams }) {
+	return (
+		<main className="flex min-h-screen flex-col items-center bg-black">
+			<Nav />
+			<div className="relative w-full mt-16 flex flex-col items-center">
+				<div className="absolute flex w-5/6 h-full z-10 place-content-center items-center">
+					<div className="flex flex-col items-center w-full text-center">
+						<p className="text-xl border-4 py-4 font-bold md:font-semibold md:text-7xl md:py-8 md:border-8 w-10/12 lg:w-9/12"><span className="text-2xl lg:text-7xl">Coco</span> Trade Indonesia</p>
+						<p className="text-center text-cus font-normal mt-2 md:text-3xl md:mt-4">World&apos;s Best Coconut Briquette Charcoal From Indonesia</p>
+					</div>
+				</div>
+				<SwiperMenu />
+			</div>
+
+			<section className="my-12"></section>
+
+			<div className="flex flex-col items-center px-12 md:px-40">
+				<p className="text-xl md:text-4xl font-semibold">Our Charcoal Briquette</p>
+				<section className="py-2"></section>
+				<p className="text-center font-extralight md:font-thin">
+					Discover the excellence of our Coconut Charcoal Briquette, meticulously crafted from top-tier local coconut shells and wood. 
+					Free from harmful additives, our briquettes, made by compressing finely ground coconut shell charcoal with a natural binder, offer heightened heat and prolonged burn time. 
+					Perfect for both indoor and outdoor use in households, and versatile for applications like barbecues, stoves, and metallurgy. 
+					Choose our eco-friendly, high-quality coconut charcoal briquettes for an enhanced and sustainable fuel solution.
+				</p>
+			</div>
+
+			<section className="my-12"></section>
+
+			{/* >= tablet */}
+			<div className="hidden lg:flex items-center place-content-around px-40 w-full">
+				<div className="flex flex-col items-center w-1/5">
+					<img src='/eco.png' className="p-2 h-28 w-28 object-cover" />
+					<p className="text-center">Eco-Friendly Products</p>
+					<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div className="flex flex-col items-center w-1/5">
+					<img src='/prolong.png' className="p-3 h-28 w-28 object-cover" />
+					<p className="text-center">Prolong Charcoal</p>
+					<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div className="flex flex-col items-center w-1/5">
+					<img src='/deliver.png' className="h-28 w-28 object-cover" />
+					<p className="text-center">Fast Delivery</p>
+					<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div className="flex flex-col items-center w-1/5">
+					<img src='/logo.png' className="h-28 w-28 p-3 object-cover" />
+					<p className="text-center">Good Packaging</p>
+					<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
+			{/* Mobile */}
+			<div className="lg:hidden flex flex-col items-center gap-2 px-12 w-full">
+				<div className="flex gap-1 items-center h-fit">
+					<img src='/eco.png' className="p-2 h-28 w-28 object-cover" />
+					<div>
+						<p className="text-center">Eco-Friendly Products</p>
+						<p className="font-extralight md:font-thin text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div className="flex gap-1 items-center h-fit">
+					<div>
+						<p className="text-center">Prolong Charcoal</p>
+						<p className="font-extralight md:font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<img src='/prolong.png' className="p-3 h-28 w-28 object-cover" />
+				</div>
+				<div className="flex gap-1 items-center h-fit">
+					<img src='/deliver.png' className="h-28 w-28 object-cover" />
+					<div>
+						<p className="text-center">Fast Delivery</p>
+						<p className="font-extralight md:font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div className="flex gap-1 items-center h-fit">
+					<div>
+						<p className="text-center">Good Packaging</p>
+						<p className="font-extralight md:font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<img src='/logo.png' className="h-28 w-28 p-3 object-cover" />
+				</div>
+			</div>
+
+			<section className="my-20" id='product'></section>
+
+			<div className="flex flex-col items-center w-11/12 lg:w-8/12 h-full lg:h-60v">
+				<p className="text-4xl font-semibold">Our Products</p>
+				{/* >= tablet */}
+				<div className="hidden lg:flex mt-2 md:mt-12 items-stretch gap-14 place-content-between h-full">
+					<Cards id={0} img={'cube.png'} title={"Cube Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+					<Cards id={1} img={'pillow.png'} title={"Pillow Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+					<Cards id={2} img={'hex.png'} title={"Hexagon Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+				</div>
+				{/* mobile */}
+				<div className="lg:hidden md:w-9/12 mt-2 flex flex-col items-center gap-16">
+					<MobileCard id={0} img={'cube.png'} title={"Cube Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+					<MobileCard id={1} img={'pillow.png'} title={"Pillow Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+					<MobileCard id={2} img={'hex.png'} title={"Hexagon Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+				</div>
+				<Link href='/products' className="mt-12 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 border border-gray-600 text-gray-400 hover:text-white hover:bg-gray-800 focus:ring-gray-900">
+					More Details
+				</Link>
+			</div>
+
+			<section className="my-10 md:my-20" id='contact'></section>
+
+			<Footer />
+
+			{searchParams?.modal >= 0 && searchParams?.modal <= 2 ? (
+				<Modal id={searchParams?.modal} />
+			) : null}
+
+			<div className="fixed z-20 bottom-0 right-0 p-8">
+				<Contact />
+			</div>
+		</main>
+	)
+}
+
+export default Home;
