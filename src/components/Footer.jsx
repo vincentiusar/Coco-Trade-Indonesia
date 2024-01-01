@@ -41,6 +41,7 @@ function Footer() {
 			<div className="flex flex-col items-center text-center font-thin px-12 md:px-80 w-full h-full">
 				Copyright &copy; 2023 Coco Trade Indonesia. All Rights Reserved.
 			</div>
+			<section className="my-4"></section>
         </>
     )
 }
