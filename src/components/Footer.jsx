@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 function Footer() {
@@ -5,20 +6,20 @@ function Footer() {
         <>
             <div className="grid grid-cols-1 gap-10 w-10/12 md:gap-0 items-center md:grid-cols-2 md:px-12 md:w-2/3 h-full z-20">
 				<div className="col-span-1">
-					<img src='/logo_full.png' alt='logo' className="w-1/3 scale-125" />
+					<Image width={0} height={0} sizes="100vw" src='/logo_full.png' alt='logo' className="w-1/3 scale-125" />
 					<p className="font-thin">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						We are a leading manufacturer and exporter of charcoal briquettes
 					</p>
 
 					<section className="my-5"></section>
 
 					<div>
 						<Link target="_blank" href='https://wa.me/6281386278150' className="text-normal">
-							Whatsapp: <span className="hover:text-blue-700">+62 8138 6278 150</span>
+							Whatsapp: <span className="hover:text-orange-500">+62 8138 6278 150</span>
 						</Link>
 					</div>
 					<div>
-						<Link target="_blank" href='https://mail.google.com/mail/u/0/?fs=1&to=cocotraderindo@gmail.com&tf=cm' className="text-normal hover:text-blue-700">
+						<Link target="_blank" href='https://mail.google.com/mail/u/0/?fs=1&to=cocotraderindo@gmail.com&tf=cm' className="text-normal hover:text-orange-500">
 							cocotraderindo@gmail.com
 						</Link>
 					</div>

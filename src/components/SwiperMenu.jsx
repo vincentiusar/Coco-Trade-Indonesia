@@ -28,13 +28,13 @@ function SwiperMenu() {
             className="swiper w-full h-50v md:h-90v"
         >
             <SwiperSlide>
-                <Image layout='fill' alt='charcoal1' className="object-cover w-full h-full" src='/bg_1.png' />
+                <Image width={0} height={0} sizes="100vw" alt='charcoal1' className="object-cover w-full h-full" src='/bg_1.png' />
             </SwiperSlide>
             <SwiperSlide>
-                <Image layout='fill' alt='charcoal2' className="object-cover w-full h-full" src="/bg_2.png" />
+                <Image width={0} height={0} sizes="100vw" alt='charcoal2' className="object-cover w-full h-full" src="/bg_2.png" />
             </SwiperSlide>
             <SwiperSlide>
-                <Image layout='fill' alt='charcoal3' className="object-cover w-full h-full" src="/bg_3.png" />
+                <Image width={0} height={0} sizes="100vw" alt='charcoal3' className="object-cover w-full h-full" src="/bg_3.png" />
             </SwiperSlide>
         </Swiper>
     )

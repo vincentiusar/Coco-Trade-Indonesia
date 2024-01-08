@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function Table({ data }) {
     return (
         <>
@@ -21,7 +23,7 @@ function Table({ data }) {
                             {data?.data.map((item, key) => (
                                 <tr key={key}>
                                     <td>
-                                        <img src={item?.image} className="w-full h-20v object-contain"></img>
+                                        <Image alt={key} width={0} height={0} sizes="100vw" src={item?.image} className="w-full h-20v object-contain"></Image>
                                     </td>
                                     <td className="px-4 py-5 text-sm text-gray-300">{item?.title}</td>
                                     <td className="px-4 py-5 text-sm text-gray-300">{item?.subtitle}</td>
@@ -43,7 +45,7 @@ function Table({ data }) {
             <div className="flex md:hidden flex-col gap-16 w-full items-center">
                 {data?.data?.map((item, key) => (
                     <div key={key} className="flex flex-col shadow-xl rounded-lg bg-black z-10 w-11/12 shadow-gray-500 items-center p-5 place-content-between">
-                        <img src={item?.image} className="w-1/2" />
+                        <Image alt={key} width={0} height={0} sizes="100vw" src={item?.image} className="w-1/2" />
                         <div class="relative overflow-x-auto shadow-md w-full">
                             <p className="text-center mb-4 text-xl font-normal">{item?.title} - {item?.subtitle}</p>
                             <table className="w-full text-sm text-left rtl:text-right text-gray-400">
