@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const products = 
@@ -60,7 +61,7 @@ function Modal({ id }) {
                         </Link>
                     </div>
                     <div className="flex flex-col md:flex-row items-center p-5 place-content-between">
-                        <img src={products?.[id]?.image} className="w-1/2" />
+                        <Image alt='product' width={0} height={0} sizes="100vw" src={products?.[id]?.image} className="w-1/2" />
                         <div class="relative overflow-x-auto shadow-md w-full">
                             <p className="text-center mb-4 text-xl font-normal">{products?.[id]?.subtitle}</p>
                             <table className="w-full text-sm text-left rtl:text-right text-gray-400">
@@ -89,9 +90,6 @@ function Modal({ id }) {
                             </table>
                             <div className="font-thin mt-3 text-center">{products?.[id]?.desc}</div>
                         </div>
-                    </div>
-                    <div className="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-                        <Link href='.' scroll={false} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</Link>
                     </div>
                 </div>
             </div>

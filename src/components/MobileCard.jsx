@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 
 function MobileCard({ id, img, title, desc }) {
     return (
         <Link href={`./?modal=${id}`} scroll={false} className="rounded-lg w-10/12 h-full overflow-hidden shadow-xl shadow-zinc-400">
             <div className="w-full h-30v">
-                <img src={img} alt={img} className="h-full w-full object-contain" />
+                <Image width={0} height={0} sizes="100vw" src={img} alt={img} className="h-full w-full object-contain" />
             </div>
             <div className="w-full bg-zinc-900 h-1/2 text-center pb-3">
                 <h2 className="text-center font-semibold text-2xl px-6 py-3 line-clamp-1">{title}</h2>

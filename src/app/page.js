@@ -5,6 +5,7 @@ import MobileCard from "@/components/MobileCard";
 import Modal from "@/components/Modal";
 import Nav from "@/components/Nav";
 import SwiperMenu from "@/components/SwiperMenu";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
@@ -35,7 +36,7 @@ function Home({ searchParams }) {
 					Discover the excellence of our Coconut Charcoal Briquette, meticulously crafted from top-tier local coconut shells and wood. 
 					Free from harmful additives, our briquettes, made by compressing finely ground coconut shell charcoal with a natural binder, offer heightened heat and prolonged burn time. 
 					Perfect for both indoor and outdoor use in households, and versatile for applications like barbecues, stoves, and metallurgy. 
-					Choose our eco-friendly, high-quality coconut charcoal briquettes for an enhanced and sustainable fuel solution.
+					Choose our eco-friendly, high-quality coconut charcoal briquettes.
 				</p>
 			</div>
 
@@ -44,55 +45,55 @@ function Home({ searchParams }) {
 			{/* >= tablet */}
 			<div className="hidden lg:flex items-center place-content-around px-40 w-full">
 				<div className="flex flex-col items-center w-1/5">
-					<img src='/eco.png' className="p-2 h-28 w-28 object-cover" />
+					<Image alt='eco' width={0} height={0} sizes="100vw" src='/eco.png' className="p-2 h-28 w-28 object-cover" />
 					<p className="text-center">Eco-Friendly Products</p>
-					<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p className="font-thin text-center line-clamp-2">Natural, High quality, Non Toxic, No Chemical</p>
 				</div>
 				<div className="flex flex-col items-center w-1/5">
-					<img src='/prolong.png' className="p-3 h-28 w-28 object-cover" />
-					<p className="text-center">Prolong Charcoal</p>
-					<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<Image alt='quality' width={0} height={0} sizes="100vw" src='/quality.png' className="p-3 h-28 w-28 object-cover" />
+					<p className="text-center">Quality</p>
+					<p className="font-thin text-center line-clamp-2">Healhty Clean, Smokeless, Odorless, Tasteless</p>
 				</div>
 				<div className="flex flex-col items-center w-1/5">
-					<img src='/deliver.png' className="h-28 w-28 object-cover" />
-					<p className="text-center">Fast Delivery</p>
-					<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<Image alt='renew' width={0} height={0} sizes="100vw" src='/renewable.png' className="h-28 w-28 object-cover" />
+					<p className="text-center">Fine Process</p>
+					<p className="font-thin text-center line-clamp-2">Greate Quality, Green, Renewable, Certificated</p>
 				</div>
 				<div className="flex flex-col items-center w-1/5">
-					<img src='/logo.png' className="h-28 w-28 p-3 object-cover" />
+					<Image alt='logo' width={0} height={0} sizes="100vw" src='/logo.png' className="h-28 w-28 p-3 object-cover" />
 					<p className="text-center">Good Packaging</p>
-					<p className="font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p className="font-thin text-center line-clamp-2">Ready for Request Packing & Private Labeling (OEM)</p>
 				</div>
 			</div>
 			{/* Mobile */}
 			<div className="lg:hidden flex flex-col items-center gap-2 px-12 w-full">
 				<div className="flex gap-1 items-center h-fit">
-					<img src='/eco.png' className="p-2 h-28 w-28 object-cover" />
+					<Image alt='eco2' width={0} height={0} sizes="100vw" src='/eco.png' className="p-2 h-28 w-28 object-cover" />
 					<div>
 						<p className="text-center">Eco-Friendly Products</p>
-						<p className="font-extralight md:font-thin text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p className="font-extralight md:font-thin text-center">Natural, High quality, Non Toxic, No Chemical</p>
 					</div>
 				</div>
 				<div className="flex gap-1 items-center h-fit">
 					<div>
-						<p className="text-center">Prolong Charcoal</p>
-						<p className="font-extralight md:font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p className="text-center">Quality</p>
+						<p className="font-extralight md:font-thin text-center line-clamp-2">Healhty Clean, Smokeless, Odorless, Tasteless</p>
 					</div>
-					<img src='/prolong.png' className="p-3 h-28 w-28 object-cover" />
+					<Image alt='quality2' width={0} height={0} sizes="100vw" src='/quality.png' className="p-3 h-28 w-28 object-cover" />
 				</div>
 				<div className="flex gap-1 items-center h-fit">
-					<img src='/deliver.png' className="h-28 w-28 object-cover" />
+					<Image alt='renew2' width={0} height={0} sizes="100vw" src='/renewable.png' className="h-28 w-28 object-cover" />
 					<div>
-						<p className="text-center">Fast Delivery</p>
-						<p className="font-extralight md:font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p className="text-center">Fine Process</p>
+						<p className="font-extralight md:font-thin text-center line-clamp-2">Greate Quality, Green, Renewable, Certificated</p>
 					</div>
 				</div>
 				<div className="flex gap-1 items-center h-fit">
 					<div>
 						<p className="text-center">Good Packaging</p>
-						<p className="font-extralight md:font-thin text-center line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p className="font-extralight md:font-thin text-center line-clamp-2">Ready for Request Packing & Private Labeling (OEM)</p>
 					</div>
-					<img src='/logo.png' className="h-28 w-28 p-3 object-cover" />
+					<Image alt='logo2' width={0} height={0} sizes="100vw" src='/logo.png' className="h-28 w-28 p-3 object-cover" />
 				</div>
 			</div>
 
@@ -102,15 +103,15 @@ function Home({ searchParams }) {
 				<p className="text-4xl font-semibold">Our Products</p>
 				{/* >= tablet */}
 				<div className="hidden lg:flex mt-2 md:mt-12 items-stretch gap-14 place-content-between h-full">
-					<Cards id={0} img={'cube.png'} title={"Cube Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
-					<Cards id={1} img={'pillow.png'} title={"Pillow Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
-					<Cards id={2} img={'hex.png'} title={"Hexagon Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+					<Cards id={0} img={'/cube.png'} title={"Cube Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+					<Cards id={1} img={'/pillow.png'} title={"Pillow Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+					<Cards id={2} img={'/hex.png'} title={"Hexagon Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
 				</div>
 				{/* mobile */}
 				<div className="lg:hidden md:w-9/12 mt-2 flex flex-col items-center gap-16">
-					<MobileCard id={0} img={'cube.png'} title={"Cube Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
-					<MobileCard id={1} img={'pillow.png'} title={"Pillow Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
-					<MobileCard id={2} img={'hex.png'} title={"Hexagon Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+					<MobileCard id={0} img={'/cube.png'} title={"Cube Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+					<MobileCard id={1} img={'/pillow.png'} title={"Pillow Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+					<MobileCard id={2} img={'/hex.png'} title={"Hexagon Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
 				</div>
 				<Link href='/products' className="mt-12 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 border border-gray-600 text-gray-400 hover:text-white hover:bg-gray-800 focus:ring-gray-900">
 					More Details

@@ -2,6 +2,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import Table from "@/components/Table";
+import Image from "next/image";
 
 export const metadata = {
 	title: 'Products',
@@ -59,7 +60,7 @@ function Products() {
 			<Nav />
 
 			<div className="w-full mt-16 relative">
-				<img src="/bg_1.png" className="fixed top-0 -mt-16 md:mt-0 md:absolute object-cover w-full opacity-50 h-screen md:h-90v" />
+				<Image alt='bg1' width={0} height={0} sizes="100vw" src="/bg_1.png" className="fixed top-0 -mt-16 md:mt-0 md:absolute object-cover w-full opacity-50 h-screen md:h-90v" />
 				<section className="my-12"></section>
 				<Table data={products} />
 			</div>
