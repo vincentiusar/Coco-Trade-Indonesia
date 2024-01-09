@@ -77,7 +77,7 @@ function Home({ searchParams }) {
 				<div className="flex gap-1 items-center h-fit">
 					<div>
 						<p className="text-center">Quality</p>
-						<p className="font-extralight md:font-thin text-center line-clamp-2">Healhty Clean, Smokeless, Odorless, Tasteless</p>
+						<p className="font-extralight md:font-thin text-center">Healhty Clean, Smokeless, Odorless, Tasteless</p>
 					</div>
 					<Image alt='quality2' width={0} height={0} sizes="100vw" src='/quality.png' className="p-3 h-28 w-28 object-cover" />
 				</div>
@@ -85,13 +85,13 @@ function Home({ searchParams }) {
 					<Image alt='renew2' width={0} height={0} sizes="100vw" src='/renewable.png' className="h-28 w-28 object-cover" />
 					<div>
 						<p className="text-center">Fine Process</p>
-						<p className="font-extralight md:font-thin text-center line-clamp-2">Greate Quality, Green, Renewable, Certificated</p>
+						<p className="font-extralight md:font-thin text-center">Greate Quality, Green, Renewable, Certificated</p>
 					</div>
 				</div>
 				<div className="flex gap-1 items-center h-fit">
 					<div>
 						<p className="text-center">Good Packaging</p>
-						<p className="font-extralight md:font-thin text-center line-clamp-2">Ready for Request Packing</p>
+						<p className="font-extralight md:font-thin text-center">Ready for Request Packing</p>
 					</div>
 					<Image alt='logo2' width={0} height={0} sizes="100vw" src='/logo.png' className="h-28 w-28 p-3 object-cover" />
 				</div>
@@ -103,15 +103,15 @@ function Home({ searchParams }) {
 				<p className="text-4xl font-semibold">Our Products</p>
 				{/* >= tablet */}
 				<div className="hidden lg:flex mt-2 md:mt-12 items-stretch gap-14 place-content-between h-full">
-					<Cards id={0} img={'/cube.png'} title={"Cube Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
-					<Cards id={1} img={'/pillow.png'} title={"Pillow Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
-					<Cards id={2} img={'/hex.png'} title={"Hexagon Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+					<Cards id={0} img={'/cube.png'} title={"Cube Charcoal"} />
+					<Cards id={1} img={'/pillow.png'} title={"Pillow Charcoal"} />
+					<Cards id={2} img={'/hex.png'} title={"Hexagon Charcoal"} />
 				</div>
 				{/* mobile */}
 				<div className="lg:hidden md:w-9/12 mt-2 flex flex-col items-center gap-16">
-					<MobileCard id={0} img={'/cube.png'} title={"Cube Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
-					<MobileCard id={1} img={'/pillow.png'} title={"Pillow Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
-					<MobileCard id={2} img={'/hex.png'} title={"Hexagon Charcoal"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper, ligula sit amet tristique posuere, risus lacus faucibus tortor, ac malesuada diam ligula non lacus. In eget elementum dui. Vestibulum eu turpis et arcu maximus."} />
+					<MobileCard id={0} img={'/cube.png'} title={"Cube Charcoal"} />
+					<MobileCard id={1} img={'/pillow.png'} title={"Pillow Charcoal"} />
+					<MobileCard id={2} img={'/hex.png'} title={"Hexagon Charcoal"} />
 				</div>
 				<Link href='/products' className="mt-12 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 border border-gray-600 text-gray-400 hover:text-white hover:bg-gray-800 focus:ring-gray-900">
 					More Details
