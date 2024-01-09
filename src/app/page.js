@@ -62,7 +62,7 @@ function Home({ searchParams }) {
 				<div className="flex flex-col items-center w-1/5">
 					<Image alt='logo' width={0} height={0} sizes="100vw" src='/logo.png' className="h-28 w-28 p-3 object-cover" />
 					<p className="text-center">Good Packaging</p>
-					<p className="font-thin text-center line-clamp-2">Ready for Request Packing & Private Labeling (OEM)</p>
+					<p className="font-thin text-center line-clamp-2">Ready for Request Packing</p>
 				</div>
 			</div>
 			{/* Mobile */}
@@ -91,7 +91,7 @@ function Home({ searchParams }) {
 				<div className="flex gap-1 items-center h-fit">
 					<div>
 						<p className="text-center">Good Packaging</p>
-						<p className="font-extralight md:font-thin text-center line-clamp-2">Ready for Request Packing & Private Labeling (OEM)</p>
+						<p className="font-extralight md:font-thin text-center line-clamp-2">Ready for Request Packing</p>
 					</div>
 					<Image alt='logo2' width={0} height={0} sizes="100vw" src='/logo.png' className="h-28 w-28 p-3 object-cover" />
 				</div>
