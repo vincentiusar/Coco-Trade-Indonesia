@@ -9,7 +9,7 @@ function Cards({ id, img, title }) {
             </div>
             <div className="absolute z-10 w-full bg-zinc-900 h-30v -mt-3 transition-all duration-500 group-hover:-translate-y-1/3 flex flex-col items-center">
                 <h2 className="text-center font-semibold text-2xl py-3">{title}</h2>
-                <button className="mt-64 transition-all duration-500 group-hover:mt-0 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Detail</button>
+                <button className="mt-64 transition-all duration-500 group-hover:mt-0 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 border border-gray-600 text-gray-400 hover:text-white hover:bg-gray-800 focus:ring-gray-900">Detail</button>
             </div>
             <div className="absolute top-0 bg-black opacity-0 transition-all h-90v w-full duration-500 group-hover:opacity-40"></div>
         </Link>
