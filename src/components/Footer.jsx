@@ -14,8 +14,8 @@ function Footer() {
 					<section className="my-5"></section>
 
 					<div>
-						<Link target="_blank" href='https://wa.me/6281386278150' className="text-normal">
-							Whatsapp: <span className="hover:text-orange-500">+62 8138 6278 150</span>
+						<Link target="_blank" href='https://wa.me/62895402554199' className="text-normal">
+							Whatsapp: <span className="hover:text-orange-500">+62 8954 0255 4199</span>
 						</Link>
 					</div>
 					<div>
