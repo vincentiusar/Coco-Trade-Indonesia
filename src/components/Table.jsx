@@ -26,11 +26,10 @@ function Table({ data }) {
                                         <Image alt={key} width={0} height={0} sizes="100vw" src={item?.image} className="w-full h-20v object-contain"></Image>
                                     </td>
                                     <td className="px-4 py-5 text-sm text-gray-300">{item?.title}</td>
-                                    <td className="px-4 py-5 text-sm text-gray-300">{item?.subtitle}</td>
                                     <td className="px-4 py-5 text-sm text-gray-300">
                                         <ul className="list-disc">
                                             {item?.quality.map((item, key) => (
-                                                <li key={key}>{item?.name} - {item?.ash}</li>
+                                                <li key={key}>{item?.name} {item?.ash && '-' + item?.ash}</li>
                                             ))}
                                         </ul>
                                     </td>

@@ -103,15 +103,15 @@ function Home({ searchParams }) {
 				<p className="text-4xl font-semibold">Our Products</p>
 				{/* >= tablet */}
 				<div className="hidden lg:flex mt-2 md:mt-12 items-stretch gap-14 place-content-between h-full">
-					<Cards id={0} img={'/cube.png'} title={"Cube Charcoal"} />
-					<Cards id={1} img={'/pillow.png'} title={"Pillow Charcoal"} />
-					<Cards id={2} img={'/hex.png'} title={"Hexagon Charcoal"} />
+					<Cards id={0} img={'/cube.png'} title={"Shisha Charcoal"} />
+					<Cards id={1} img={'/pillow.png'} title={"Barbacue Charcoal"} />
+					<Cards id={2} img={'/hex.png'} title={"Sawdust Charcoal"} />
 				</div>
 				{/* mobile */}
 				<div className="lg:hidden md:w-9/12 mt-2 flex flex-col items-center gap-16">
-					<MobileCard id={0} img={'/cube.png'} title={"Cube Charcoal"} />
-					<MobileCard id={1} img={'/pillow.png'} title={"Pillow Charcoal"} />
-					<MobileCard id={2} img={'/hex.png'} title={"Hexagon Charcoal"} />
+					<MobileCard id={0} img={'/cube.png'} title={"Shisha Charcoal"} />
+					<MobileCard id={1} img={'/pillow.png'} title={"Barbacue Charcoal"} />
+					<MobileCard id={2} img={'/hex.png'} title={"Sawdust Charcoal"} />
 				</div>
 				<Link href='/products' className="mt-12 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 border border-gray-600 text-gray-400 hover:text-white hover:bg-gray-800 focus:ring-gray-900">
 					More Details

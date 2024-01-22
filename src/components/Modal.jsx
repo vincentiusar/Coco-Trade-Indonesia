@@ -4,7 +4,7 @@ import Link from "next/link";
 const products = 
 [
 	{
-		'title': 'Cube',
+		'title': 'Shisha',
         'image': '/cube.png',
         'subtitle': 'Shisha Briquette',
         'quality': 
@@ -17,7 +17,7 @@ const products =
         'desc': 'Inner Plastic 1KG, Inner Box 1KG, Outer Box 10KG'
 	},
 	{
-        'title': 'Pillow',
+        'title': 'Barbacue',
         'image': '/pillow.png',
         'subtitle': 'BBQ Briquette',
         'quality': 
@@ -30,15 +30,15 @@ const products =
         'desc': 'Inner Plastic, Inner Box 10KG'
 	},
 	{
-        'title': 'Hexagon',
+        'title': 'Sawdust',
         'image': '/hex.png',
-        'subtitle': 'BBQ Briquette',
+        'subtitle': 'Sawdust Briquette',
         'quality': 
             [
-                {'name': 'A', 'ash': '3% - 5%'},
-                {'name': 'B', 'ash': '7% - 8%'},
-                {'name': 'C', 'ash': '10% - 12%'},
-                {'name': 'D', 'ash': 'Up To 18%'},
+                {'name': 'AB',},
+                {'name': 'ABC',},
+                {'name': 'CD',},
+                {'name': 'DE',},
             ],
         'desc': 'Inner Plastic, Inner Box 10KG'
 	},
@@ -70,9 +70,11 @@ function Modal({ id }) {
                                         <th scope="col" className="px-6 py-3">
                                             Type
                                         </th>
-                                        <th scope="col" className="px-6 py-3">
-                                            Ash
-                                        </th>
+                                        {products?.[id]?.quality?.[0]?.ash &&
+                                            <th scope="col" className="px-6 py-3">
+                                                Ash
+                                            </th>
+                                        }
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -81,9 +83,11 @@ function Modal({ id }) {
                                             <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap text-white">
                                                 {item?.name}
                                             </th>
-                                            <td className="px-6 py-4">
-                                                {item?.ash}
-                                            </td>
+                                            {item?.ash &&
+                                                <td className="px-6 py-4">
+                                                    {item?.ash}
+                                                </td>
+                                            }
                                         </tr>
                                     ))}
                                 </tbody>
